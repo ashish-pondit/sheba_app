@@ -1,0 +1,3 @@
+export slider1 = [
+    
+]

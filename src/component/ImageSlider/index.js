@@ -10,20 +10,12 @@ import {
   View,
 } from 'react-native';
 
-import Routes from './src/navigation/Routes';
-
-const App = () => {
+const ImageSlider = () => {
   return (
-    <View style={styles.Container}>
-      <Routes />
+    <View>
+      <Text>Image slider</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({
-  Container: {
-    flex: 1,
-  },
-});
-
-export default App;
+export default ImageSlider;
