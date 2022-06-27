@@ -10,10 +10,13 @@ import {
   View,
 } from 'react-native';
 
+import Routes from './src/navigation/Routes';
+
 const App: () => Node = () => {
   return (
     <View style={styles.Container}>
       <Text>Hello world !!</Text>
+      <Routes />
     </View>
   );
 };
