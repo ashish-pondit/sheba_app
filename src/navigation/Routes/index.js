@@ -2,6 +2,7 @@ import * as React from 'react';
 import {Text, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 function HomeScreen() {
   return (
@@ -14,7 +15,7 @@ function HomeScreen() {
 function Inbox() {
   return (
     <View>
-      <Text>Home screen</Text>
+      <Text>Inbox</Text>
     </View>
   );
 }
@@ -22,7 +23,7 @@ function Inbox() {
 function Orders() {
   return (
     <View>
-      <Text>Home screen</Text>
+      <Text>Orders</Text>
     </View>
   );
 }
@@ -30,7 +31,7 @@ function Orders() {
 function Help() {
   return (
     <View>
-      <Text>Home screen</Text>
+      <Text>Help</Text>
     </View>
   );
 }
@@ -38,7 +39,7 @@ function Help() {
 function More() {
   return (
     <View>
-      <Text>Home screen</Text>
+      <Text>More</Text>
     </View>
   );
 }
@@ -47,9 +48,35 @@ const Tab = createBottomTabNavigator();
 const Routes = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Inbox" component={Inbox} />
+      <Tab.Navigator
+        screenOptions={({route}) => ({
+          tabBarIcon: ({focused, color, size}) => {
+            let iconName;
+
+            if (route.name === 'Home') {
+              iconName = focused
+                ? 'ios-information-circle'
+                : 'ios-information-circle-outline';
+            } else if (route.name === 'Settings') {
+              iconName = focused ? 'ios-list-box' : 'ios-list';
+            }
+
+            // You can return any component that you like here!
+            return <Ionicons name={iconName} size={size} color={color} />;
+          },
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray',
+        })}>
+        <Tab.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
+        <Tab.Screen
+          name="Inbox"
+          component={Inbox}
+          options={{headerShown: false}}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
