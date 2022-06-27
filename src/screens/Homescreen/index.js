@@ -14,6 +14,7 @@ import {
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {colorValue} from '../../config';
 import ImageSlider from '../../component/ImageSlider';
+import Search from '../../component/Search';
 
 const HomeScreen = () => {
   return (
@@ -34,7 +35,9 @@ const HomeScreen = () => {
           </Text>
         </TouchableOpacity>
       </View>
+
       <ScrollView style={styles.scrollDesign}>
+        <Search />
         <ImageSlider />
       </ScrollView>
     </View>
@@ -47,6 +50,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    backgroundColor: 'white',
   },
   scrollDesign: {
     padding: 0,
