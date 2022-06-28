@@ -8,11 +8,10 @@ To try the app
 ## Some Snapshots
 <table>
     <tr>
-        <td align="center"><a href="screenshots/ss-1.jpg"></a></td>
-        <td align="center"><a href="screenshots/ss-2.jpg"></a></td>
-        <td align="center"><a href="screenshots/ss-3.jpg"></a></td>
-        <td align="center"><a href="screenshots/ss-4.jpg"></a></td>
-        <td align="center"><a href="screenshots/ss-5.jpg"></a></td>
+        <td align="center"><a href="https://github.com/ashish-pondit/sheba_app/blob/main/screenshots/ss-1.jpg"></a></td>
+        <td align="center"><a href="https://github.com/ashish-pondit/sheba_app/blob/main/screenshots/ss-2.jpg"></a></td>
+        <td align="center"><a href="https://github.com/ashish-pondit/sheba_app/blob/main/screenshots/ss-3.jpg"></a></td>
+        <td align="center"><a href="https://github.com/ashish-pondit/sheba_app/blob/main/screenshots/ss-4.jpg"></a></td>
         
     </tr>
 </table>
