@@ -7,7 +7,9 @@ To try the app
 
 ## Some Snapshots
 
-![Alt text](screenshots/ss-1.jpg "Optional title")
+<!-- ![Alt text](screenshots/ss-1.jpg "Optional title") -->
+<img src="screenshots/ss-1.jpg" alt="Alt text" title="Optional title">
+
 <table>
     <tr>
         <td align="center">![Alt text](screenshots/ss-1.jpg " ")</a></td>
