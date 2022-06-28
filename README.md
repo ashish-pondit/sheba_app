@@ -2,7 +2,7 @@
 
 I have made a Sheba App clone. I was quite easy and I enjoyed while making it.
 
-To try the app run the following
+To try the app run the following <br>
 `npm install` <br>
 `npm start` and `npx react-native run-android`<br >
 
