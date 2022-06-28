@@ -15,6 +15,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import {colorValue} from '../../config';
 import ImageSlider from '../../component/ImageSlider';
 import Search from '../../component/Search';
+import Category from '../../component/Category';
 // import {slider1} from '../../data';
 
 const slider1 = [
@@ -26,6 +27,7 @@ const slider1 = [
   require('../../assets/slider-1_image-6.jpg'),
   require('../../assets/slider-1_image-7.jpg'),
 ];
+
 const HomeScreen = () => {
   return (
     <View style={styles.Container}>
@@ -49,6 +51,7 @@ const HomeScreen = () => {
       <ScrollView style={styles.scrollDesign}>
         <Search />
         <ImageSlider imageList={slider1} />
+        <Category />
       </ScrollView>
     </View>
   );
