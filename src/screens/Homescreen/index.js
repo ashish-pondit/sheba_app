@@ -17,6 +17,7 @@ import ImageSlider from '../../component/ImageSlider';
 import Search from '../../component/Search';
 import Category from '../../component/Category';
 import Bigdeal from '../../component/Bigdeal';
+import Slidebonus from '../../component/Slidebonus';
 // import {slider1} from '../../data';
 
 const slider1 = [
@@ -27,6 +28,13 @@ const slider1 = [
   require('../../assets/slider-1_image-5.jpg'),
   require('../../assets/slider-1_image-6.jpg'),
   require('../../assets/slider-1_image-7.jpg'),
+];
+
+const slider2 = [
+  require('../../assets/slider-2_image-1.jpg'),
+  require('../../assets/slider-2_image-2.jpg'),
+  require('../../assets/slider-2_image-3.jpg'),
+  require('../../assets/slider-2_image-4.jpg'),
 ];
 
 const HomeScreen = () => {
@@ -54,6 +62,8 @@ const HomeScreen = () => {
         <ImageSlider imageList={slider1} />
         <Category />
         <Bigdeal />
+        <Slidebonus />
+        <ImageSlider imageList={slider2} />
       </ScrollView>
     </View>
   );
