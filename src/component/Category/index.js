@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
   moreButton: {
     color: colorValue.primary,
     fontSize: 15,
+    marginVertical: spacing.sm,
   },
 });
 
