@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
   },
   textInput: {
     fontSize: 15,
+    flexGrow: 1,
   },
   searchStyle: {
     borderWidth: 1.5,

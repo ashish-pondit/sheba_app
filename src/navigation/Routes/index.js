@@ -4,7 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import HomeScreen from '../../screens/Homescreen';
-import {colorValue} from '../../config';
+import {colorValue, spacing} from '../../config';
 
 function Inbox() {
   return (
@@ -44,7 +44,6 @@ const Routes = () => {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({route}) => ({
-          tabBarBadgeStyle: {padding: 20},
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
 
@@ -69,7 +68,12 @@ const Routes = () => {
           },
           tabBarActiveTintColor: colorValue.primary,
           tabBarInactiveTintColor: colorValue.darkSoft,
-          //   tabBarLabelStyle:
+          tabBarLabelStyle: {
+            fontSize: 11,
+            position: 'relative',
+            top: 0,
+            paddingBottom: spacing.sm,
+          },
         })}>
         <Tab.Screen
           name="Home"
