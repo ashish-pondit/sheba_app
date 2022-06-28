@@ -27,7 +27,7 @@ const ImageSlider = props => {
         nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width,
       );
 
-      console.log(`current slide is ${slide}`);
+      // console.log(`current slide is ${slide}`);
 
       if (slide != imageNo) {
         // slide = slide > 6 ? 6 : slide;
