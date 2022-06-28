@@ -59,14 +59,14 @@ const Category = props => {
   });
   return (
     <View style={styles.Container}>
-      <Caticon logo={logos[0].imgPath} caption={logos[0].caption} />
-      <Caticon logo={logos[1].imgPath} caption={logos[1].caption} />
-      <Caticon logo={logos[2].imgPath} caption={logos[2].caption} />
-      <Caticon logo={logos[3].imgPath} caption={logos[3].caption} />
-      <Caticon logo={logos[4].imgPath} caption={logos[4].caption} />
-      <Caticon logo={logos[5].imgPath} caption={logos[5].caption} />
-      <Caticon logo={logos[6].imgPath} caption={logos[6].caption} />
-      <Caticon logo={logos[7].imgPath} caption={logos[7].caption} />
+      <Caticon key={1} logo={logos[0].imgPath} caption={logos[0].caption} />
+      <Caticon key={2} logo={logos[1].imgPath} caption={logos[1].caption} />
+      <Caticon key={3} logo={logos[2].imgPath} caption={logos[2].caption} />
+      <Caticon key={4} logo={logos[3].imgPath} caption={logos[3].caption} />
+      <Caticon key={5} logo={logos[4].imgPath} caption={logos[4].caption} />
+      <Caticon key={6} logo={logos[5].imgPath} caption={logos[5].caption} />
+      <Caticon key={7} logo={logos[6].imgPath} caption={logos[6].caption} />
+      <Caticon key={8} logo={logos[7].imgPath} caption={logos[7].caption} />
 
       <Text style={styles.hline}>
         ------------------------------------------------------

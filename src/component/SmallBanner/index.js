@@ -7,33 +7,32 @@ import {
   StatusBar,
   StyleSheet,
   Text,
-  TouchableHighlight,
   TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
 import {spacing} from '../../config';
 
-const Bigdeal = props => {
+const SmallBanner = props => {
   const {imgPath} = props;
   return (
     <TouchableOpacity style={styles.Container}>
-      <Image source={imgPath} style={styles.imageStyle} resizeMode="stretch" />
+      <Image source={imgPath} style={styles.imgStyle} resizeMode="stretch" />
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   Container: {
-    // margin: spacing.md,
-    marginVertical: spacing.sm,
+    // height: 80,
     marginHorizontal: spacing.md,
+    marginVertical: spacing.sm,
     backgroundColor: 'white',
   },
-  imageStyle: {
-    height: 200,
+  imgStyle: {
+    height: 90,
     width: '100%',
   },
 });
 
-export default Bigdeal;
+export default SmallBanner;

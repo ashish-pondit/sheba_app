@@ -29,7 +29,7 @@ const Slidebonus = () => {
         horizontal={true}
         showsHorizontalScrollIndicator={false}>
         {bonuses.map((item, index) => (
-          <TouchableOpacity>
+          <TouchableOpacity key={index}>
             <Image source={item} style={styles.imageStyle} />
           </TouchableOpacity>
         ))}
