@@ -6,6 +6,8 @@ To try the app
 `npm start` and `npx react-native run-android`
 
 ## Some Snapshots
+
+![Alt text](screenshots/ss-1.jpg "Optional title")
 <table>
     <tr>
         <td align="center"><a href="https://github.com/ashish-pondit/sheba_app/blob/main/screenshots/ss-1.jpg"></a></td>
