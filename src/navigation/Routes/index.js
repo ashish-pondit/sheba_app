@@ -44,6 +44,7 @@ const Routes = () => {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={({route}) => ({
+          tabBarBadgeStyle: {padding: 20},
           tabBarIcon: ({focused, color, size}) => {
             let iconName;
 

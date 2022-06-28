@@ -15,8 +15,6 @@ import {colorValue, spacing} from '../../config';
 
 const Browsemore = props => {
   const {tab, imgCap} = props;
-  console.log(tab);
-  console.log(imgCap);
 
   return (
     <View style={styles.Container}>

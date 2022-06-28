@@ -14,8 +14,7 @@ import {colorValue} from '../../config';
 
 const Caticon = props => {
   const {logo, caption} = props;
-  console.log(logo);
-  console.log(caption);
+
   return (
     <View style={styles.Container}>
       <Image source={logo} style={styles.imageStyle} />

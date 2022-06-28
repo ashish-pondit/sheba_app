@@ -50,26 +50,14 @@ const logos = [
   },
 ];
 const Category = props => {
-  console.log(logos);
-
-  logos.map((item, index) => {
-    console.log('*************');
-    console.log(item);
-    console.log(index);
-  });
   return (
     <View style={styles.Container}>
-      <Caticon key={1} logo={logos[0].imgPath} caption={logos[0].caption} />
-      <Caticon key={2} logo={logos[1].imgPath} caption={logos[1].caption} />
-      <Caticon key={3} logo={logos[2].imgPath} caption={logos[2].caption} />
-      <Caticon key={4} logo={logos[3].imgPath} caption={logos[3].caption} />
-      <Caticon key={5} logo={logos[4].imgPath} caption={logos[4].caption} />
-      <Caticon key={6} logo={logos[5].imgPath} caption={logos[5].caption} />
-      <Caticon key={7} logo={logos[6].imgPath} caption={logos[6].caption} />
-      <Caticon key={8} logo={logos[7].imgPath} caption={logos[7].caption} />
+      {logos.map((item, index) => (
+        <Caticon key={index} logo={item.imgPath} caption={item.caption} />
+      ))}
 
       <Text style={styles.hline}>
-        ------------------------------------------------------
+        .........................................................................................
       </Text>
       <TouchableOpacity>
         <Text style={styles.moreButton}>
@@ -85,7 +73,6 @@ const styles = StyleSheet.create({
   Container: {
     height: 250,
     flexGrow: 1,
-    // backgroundColor: 'green',
     marginHorizontal: spacing.md,
     marginVertical: 5,
     borderRadius: 12,
@@ -94,11 +81,10 @@ const styles = StyleSheet.create({
     padding: 10,
     flexDirection: 'row',
     flexWrap: 'wrap',
-    // alignItems: 'center',
     justifyContent: 'center',
   },
   hline: {
-    fontSize: 25,
+    fontSize: 15,
     color: '#b0b3b5',
   },
   moreButton: {

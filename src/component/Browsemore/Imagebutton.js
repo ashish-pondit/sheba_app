@@ -15,9 +15,6 @@ import {spacing} from '../../config';
 
 const Imagebutton = props => {
   const {caption, imgPath} = props;
-  console.log('printing from image button');
-  console.log(caption);
-  console.log(imgPath);
   return (
     <TouchableOpacity style={styles.Container}>
       <Image source={imgPath} style={styles.imgStyle} resizeMode="stretch" />
