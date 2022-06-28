@@ -8,14 +8,12 @@ To try the app
 ## Some Snapshots
 
 <!-- ![Alt text](screenshots/ss-1.jpg "Optional title") -->
-<img src="screenshots/ss-1.jpg" alt="Alt text" title="Optional title">
+<img src="screenshots/ss-1.jpg" alt="Alt text" title="">
 
 <table>
     <tr>
-        <td align="center">![Alt text](screenshots/ss-1.jpg " ")</a></td>
-        <td align="center">![Alt text](screenshots/ss-2.jpg "")</a></td>
-        <td align="center">![Alt text](screenshots/ss-3.jpg "")</a></td>
-        <td align="center">![Alt text](screenshots/ss-4.jpg "")</a></td>
+<!--         <td align="center">![Alt text](screenshots/ss-1.jpg " ")</a></td> -->
+        <td><img width=300 src="screenshots/ss-1.jpg" alt="ss 1" title=""></td>
         
         
     </tr>
