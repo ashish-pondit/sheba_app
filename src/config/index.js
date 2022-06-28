@@ -6,6 +6,14 @@ export const fontConfig = {
   xxlg: 35,
 };
 
+export const spacing = {
+  sm: 10,
+  md: 20,
+  lg: 25,
+  xlg: 30,
+  xxlg: 35,
+};
+
 export const colorValue = {
   primary: '#C84367',
   primarySoft: '#C84367',

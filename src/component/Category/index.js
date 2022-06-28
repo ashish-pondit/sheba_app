@@ -10,7 +10,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {colorValue} from '../../config';
+import {colorValue, spacing} from '../../config';
 import Caticon from '../Caticon';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
@@ -86,7 +86,7 @@ const styles = StyleSheet.create({
     height: 250,
     flexGrow: 1,
     // backgroundColor: 'green',
-    marginHorizontal: 13,
+    marginHorizontal: spacing.md,
     marginVertical: 5,
     borderRadius: 12,
     borderWidth: 1.5,

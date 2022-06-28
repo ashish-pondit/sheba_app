@@ -8,11 +8,13 @@ import {
   StatusBar,
   StyleSheet,
   Text,
+  TouchableOpacity,
   useColorScheme,
   View,
 } from 'react-native';
 
 import Octicons from 'react-native-vector-icons/Octicons';
+import {spacing} from '../../config';
 
 const HEIGHT = Dimensions.get('window').height;
 const WIDTH = Dimensions.get('window').width;
@@ -79,19 +81,21 @@ const styles = StyleSheet.create({
   Container: {
     flex: 1,
     backgroundColor: 'white',
-    margin: 10,
+    // margin: 10,
+    marginVertical: spacing.sm,
+    marginHorizontal: spacing.md,
   },
   imageWraper: {
     flexGrow: 1,
     height: HEIGHT * 0.25 + 20,
   },
   wrap: {
-    width: WIDTH - 20,
-    height: HEIGHT * 0.25 + 20,
+    width: WIDTH - 40,
+    height: HEIGHT * 0.25 + 10,
   },
   imageStyle: {
-    width: WIDTH - 20,
-    height: HEIGHT * 0.25,
+    width: WIDTH - 40,
+    height: HEIGHT * 0.25 - 20,
   },
   dotwraper: {
     flexDirection: 'row',

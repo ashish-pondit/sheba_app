@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     marginVertical: 4,
-    marginHorizontal: 2,
+    // marginHorizontal: 2,
   },
   imageStyle: {
     height: 35,

@@ -16,6 +16,7 @@ import {colorValue} from '../../config';
 import ImageSlider from '../../component/ImageSlider';
 import Search from '../../component/Search';
 import Category from '../../component/Category';
+import Bigdeal from '../../component/Bigdeal';
 // import {slider1} from '../../data';
 
 const slider1 = [
@@ -52,6 +53,7 @@ const HomeScreen = () => {
         <Search />
         <ImageSlider imageList={slider1} />
         <Category />
+        <Bigdeal />
       </ScrollView>
     </View>
   );
