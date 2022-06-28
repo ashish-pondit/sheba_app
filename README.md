@@ -1,10 +1,15 @@
 # Sheba App Clone (Homepage) With React Native
 
+![React-native](https://img.shields.io/badge/-React--native-green)
+![Tab-navigation](https://img.shields.io/badge/React-Tab--navigation-yellowgreen)
+![React-native-vector-icon](https://img.shields.io/badge/-React--native--vector--icon-orange)
+
+<br>
 I have made a Sheba App clone. I was quite easy and I enjoyed while making it.
 
 To try the app run the following <br>
 `npm install` <br>
-`npm start` and `npx react-native run-android`<br >
+`npm start` and `npx react-native run-android`<br>
 
 ## Some Snapshots
 
