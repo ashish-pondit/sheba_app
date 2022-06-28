@@ -24,6 +24,7 @@ const slider1 = [
   require('../../assets/slider-1_image-4.jpg'),
   require('../../assets/slider-1_image-5.jpg'),
   require('../../assets/slider-1_image-6.jpg'),
+  require('../../assets/slider-1_image-7.jpg'),
 ];
 const HomeScreen = () => {
   return (

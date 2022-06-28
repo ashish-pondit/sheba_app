@@ -23,14 +23,14 @@ const ImageSlider = props => {
 
   const onChange = nativeEvent => {
     if (nativeEvent) {
-      var slide = Math.ceil(
+      var slide = Math.round(
         nativeEvent.contentOffset.x / nativeEvent.layoutMeasurement.width,
       );
 
       console.log(`current slide is ${slide}`);
 
       if (slide != imageNo) {
-        slide = slide > 5 ? 5 : slide;
+        // slide = slide > 6 ? 6 : slide;
         setimageNo(slide);
       }
     }
